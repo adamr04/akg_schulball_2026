@@ -36,7 +36,7 @@ export const Footer: React.FC<EmptyProps> = () => {
         <a href="https://www.ebcont.com" target="_blank">
           Digital is now
         </a>
-        , and Adam Radwan Updates by Alexander Kaimbacher
+        , and Adam Radwan; Updates by Alexander Kaimbacher
       </p>
     </footer>
   );

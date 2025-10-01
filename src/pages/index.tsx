@@ -2,7 +2,6 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import { INode, PageProps } from "@/definitions";
 import { Layout, ArticleCard, Container, Hero, Seo } from "@/components";
-import cover from "@/images/cover.png";
 
 const Home: React.FC<PageProps> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -10,20 +9,20 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="46. Schulball Akademisches Gymnasium Wien" />
+        <Seo title="47. Schulball Akademisches Gymnasium Wien" />
       <Hero
-        title="SECRET GARDEN"
-        date="17. Mai 2025"
-        location="Palais Ferstel"
-        video
+        title="1001 NACHT"
+        date="22. Mai 2026"
+        location="Palais Niederösterreich"
+        cover={"@/images/cover.png"}
       >
         <p>
-          Der 46. Maturaball des Akademischen Gymnasium Wien öffnet am 17. Mai 2025 im Palais Ferstel seine Pforten und entführt in den "Secret Garden".<br></br> <br></br>
-          Wir freuen uns auf ein zahlreiches Kommen und auf ein Wiedersehen 2025.
+          Der 47. Maturaball des Akademischen Gymnasium Wien öffnet am 22. Mai 2026 im Palais Niederösterreich seine Pforten und entführt in die Welt von "1001 Nacht".<br></br> <br></br>
+          Wir freuen uns auf ein zahlreiches Kommen und auf ein Wiedersehen 2026.
         </p>
         
         {/* Reservation Button */}
-        {/*
+        {
         <div style={{ textAlign: 'center', margin: '20px 0' }}>
           <a
             href="https://schulball-akg.at/reservation"
@@ -42,14 +41,14 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
             Karten kaufen
           </a>
         </div>
-        */}
+        }
         <p>
           <br></br>
           Liebe Ballgäste, <br></br>
           <a href="https://www.picdrop.com/evamanhart/PKjrgDRb9H">hier der Link zu den Ballfotos "Oscarnight" 2024.</a> <br></br>
           Viel Freude damit! <br></br>
           Herzliche Grüße, <br></br>
-          Ihr Schulball-Komitee 2024/25
+          Ihr Schulball-Komitee 2025/26
         </p>
       </Hero>
       <Container>

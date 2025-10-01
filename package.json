@@ -18,11 +18,11 @@
     "guide"
   ],
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby clean && gatsby develop",
+  "build": "gatsby build",
+  "develop": "gatsby clean && gatsby develop",
     "format": "gatsby clean && prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
-    "start": "npm run develop",
+  "start": "gatsby clean && mkdir -p .cache && gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "tsc": "tsc",
@@ -30,7 +30,7 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
+    "deploy": "gatsby build --prefix-paths && npx gh-pages -d public -b gh-pages"
   },
   "dependencies": {
     "@formspree/react": "^2.2.4",

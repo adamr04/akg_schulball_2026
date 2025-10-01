@@ -106,32 +106,27 @@ export const ReservationForm = () => {
   return (
     <React.Fragment>
       <HeaderSection
-        title="Online Kartenverkauf beendet"
+        title="Kartenbestellung"
         copy=""
       />
       <div className="form">
         
-        <h2>Der Online Kartenvorverkauf beginnt am 17. Oktober 2024.</h2>
-        
         <h2>Kartenverkauf und -abholung</h2>
-        <p>Alle ONLINE gekauften Karten können an den Vorverkaufstagen in der Schule abgeholt werden, 
-           bzw. direkt an der Abendkasse am 17. Mai 2025 entgegengenommen werden.<br></br>
+
+        <h3>ONLINE Kartenbestellung</h3>
+        <p>
+          Supervorverkauf: 29. Sept 2025 bis 31. Dez 2025<br></br>
+          Vorverkauf: 1. Jan 2026 bis 18. Mai 2026
+        </p>
+        <p>Alle ONLINE gekauften Karten können an den Vorverkaufstagen in der Schule abgeholt werden,
+           bzw. direkt an der Abendkasse am 22. Mai 2026 entgegengenommen werden.<br></br>
           <br></br>
-          <b>Der Online Kartenvorverkauf endet am 11. Mai 2025 um 23:59!</b> <br></br>
-          <br></br>
-          Der letzte Live-Kartenvorverkaufstag im AkG findet am Dienstag den 14. Mai 2025 in der Zeit von 09:45 bis 11:05 Uhr statt.
- 
         </p>
         <h3>Karten Vorkauf und Abholung bezahlter Ballkarten in der Schule</h3>
         <b><u>WANN?</u></b>
         <p>
-        Mittwoch, 2. April 2025 - 09:45 bis 11:05<br></br>
-        Mittwoch, 9. April 2025 - 09:45 bis 11:05<br></br>
-        Mittwoch, 23. April 2025 - 09:45 bis 11:05<br></br>
-        Mittwoch, 30. April 2025 - 09:45 bis 11:05<br></br>
-        Mittwoch, 7. Mai 2025 - 09:45 bis 11:05<br></br>
-        letzter Verkaufstag in der Schule: Mittwoch, 14. Mai 2025 - 09:45 bis 11:05
-
+        an jedem Mittwoch nach den Osterferien beginnend am 8. April 2026, von 09:45 bis 11:05<br></br>
+        Letzter Verkaufstag in der Schule: 20. Mai 2026
         </p>
   
         <b><u>WO?</u></b>
@@ -147,9 +142,9 @@ export const ReservationForm = () => {
               </dt>
               <dd className="mt-1 text-lg">
                 <div>
-                  € 35,– (Supervorverkaufsbonus vom 17. Okt bis 31. Dez 2024)
-                  <br />€ 40,– (Vorverkauf. 1. Jan bis 14. Mai 2025)
-                  <br />€ 45,– (Abendkassa)
+                  € 40,– (Supervorverkaufsbonus vom 17. Okt bis 31. Dez 2025)
+                  <br />€ 45,– (Vorverkauf. 1. Jan bis 14. Mai 2026)
+                  <br />€ 50,– (Abendkassa)
                 </div>
                 <div className="text-sm mt-2">
                   Schüler*innen, Student*innen, Lehrlinge, Zivildiener, Lehrer*innen
@@ -162,9 +157,9 @@ export const ReservationForm = () => {
               </dt>
               <dd className="mt-1 text-lg">
                 <div>
-                  € 45,– (Supervorverkaufsbonus 1. Okt bis 31. Dez 2024)
-                  <br />€ 50,– (Vorverkauf 1. Jan bis 14. Mai 2025)
-                  <br />€ 55,– (Abendkassa)
+                  € 50,– (Supervorverkaufsbonus 1. Okt bis 31. Dez 2025)
+                  <br />€ 55,– (Vorverkauf 1. Jan bis 14. Mai 2026)
+                  <br />€ 60,– (Abendkassa)
                 </div>
               </dd>
             </div>
@@ -172,10 +167,11 @@ export const ReservationForm = () => {
         </section>
         <h2>Tischplatzkarten</h2>
         <p>
-          <b>€ 15,– (Vorverkauf 17. Okt 2024 bis 14. Mai 2025)
-            <br/ >€ 25,– (Abendkasse, je nach Verfügbarkeit)</b> <br />
+          <b>€ 20,– (Vorverkauf 17. Okt 2024 bis 14. Mai 2025)
+            <br/ >€ 30,– (Abendkasse, je nach Verfügbarkeit)</b> <br />
           Sie wollen mehrere Tischplatzkarten gleichzeitig erwerben und wollen zusammensitzen?
-          Dann schreiben Sie uns bitte eine Email mit ihrem Namen und Telefonnummer und der Anzahl der Plätze an secretgarden2025@schulball-akg.at <br />
+          Dann schreiben Sie uns bitte eine Email mit ihrem Namen und Telefonnummer und der Anzahl der Plätze an 1001nacht@schulball-akg.at
+ <br />
           Wir werden Ihre Bestellung umgehend bearbeiten. < br />
           Vielen Dank!!
         </p>
@@ -364,7 +360,7 @@ export const ReservationForm = () => {
             </section>
           )}
           { 
-          /** 
+          
           <button
             type="submit"
             disabled={
@@ -395,7 +391,7 @@ export const ReservationForm = () => {
                 ></path>
               </svg>
             )}
-            /
+            
             <span>
               {guestList[0].guestName && "(" + guestList.length + ")"} Karten
               bestellen
@@ -403,7 +399,7 @@ export const ReservationForm = () => {
             
             
           </button>
-          */
+          
           }
           <p>
             <strong>Bitte beachten Sie: Eine Bestellung ist verbindlich</strong>
