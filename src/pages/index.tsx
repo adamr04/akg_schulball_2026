@@ -14,7 +14,7 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
         title="1001 NACHT"
         date="22. Mai 2026"
         location="Palais Niederösterreich"
-        cover={"@/images/cover.png"}
+        cover={"@/images/cover.jpg"}
       >
         <p>
           Der 47. Maturaball des Akademischen Gymnasium Wien öffnet am 22. Mai 2026 im Palais Niederösterreich seine Pforten und entführt in die Welt von "1001 Nacht".<br></br> <br></br>

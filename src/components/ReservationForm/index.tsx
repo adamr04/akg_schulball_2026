@@ -66,8 +66,8 @@ export const ReservationForm = () => {
     (guest) => guest.student === false
   ).length;
   const countTable = guestList.filter((guest) => guest.table === true).length;
-  const totalVVK = countStudent * 40 + countRegular * 50 + countTable * 15;
-  const totalAK = countStudent * 45 + countRegular * 55 + countTable * 15;
+  const totalVVK = countStudent * 40 + countRegular * 50 + countTable * 20;
+  const totalAK = countStudent * 50 + countRegular * 60 + countTable * 30;
   const diff = totalAK - totalVVK;
 
   const handleScroll = (event) => {
@@ -235,7 +235,7 @@ export const ReservationForm = () => {
                         onChange={(e) => handleCheckboxChange(e, i)}
                         className="border-2 focus:border-skin-primary"
                       />
-                      <span>Tischplatz (15,-) (optional)</span>
+                      <span>Tischplatz (20,-) (optional)</span>
                     </label>
 
                     <label id="inputSchulklasse">

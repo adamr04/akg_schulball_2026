@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, CalloutHeading } from "@/components";
+import coverImg from "../../images/cover.png";
 
 import "./Hero.styles.css";
 
@@ -9,7 +10,7 @@ type HeroProps = {
   date?: string;
   location?: string;
   title: string;
-  cover?: string;
+  cover?: string | boolean;
   video?: string;
 };
 
@@ -18,7 +19,6 @@ export const Hero: React.FC<HeroProps> = ({
   date,
   title,
   cover,
-  video,
   children,
 }) => {
   return (
@@ -27,24 +27,10 @@ export const Hero: React.FC<HeroProps> = ({
         {cover ? (
           <div
             className="heroBackground"
-            style={{ backgroundImage: `url(${cover})` }}
+            role="img"
+            aria-label="Hero background"
+            style={{ backgroundImage: `url(${coverImg})` }}
           />
-        ) : null}
-        {video ? (
-          <div className="heroBackground">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute object-cover w-full h-full blur-md opacity-70"
-            >
-              <source
-                src="https://media.istockphoto.com/videos/dancers-performing-latin-dance-red-light-background-ballroom-couple-video-id1324301062"
-                type="video/webm"
-              />
-            </video>
-          </div>
         ) : null}
         <Container>
           <section>
