@@ -16,43 +16,38 @@ embeddedImagesLocal:
  
 
 ---
-import Duller from './Duller.jpg';
-import Elmayer from './Elmayer.jpg';
-import OperWien from './OperWien.jpg';
-import SFU from './SFU.jpg';
-import InterContinental from './InterContinental.jpg';
-import KEM from './KEM.jpg';
-import ZEIB from './ZEIB_Logo_PNG.jpg';
-import EV_AkG from './EV_AkG.jpg';
-import Miedler from './Miedler.jpg';
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
 
 <div class="gallery gallery--square">
-  <a href="https://www.helvetia.com/at/web/de/ueber-helvetia/kontakt-aufnehmen/helvetia-standorte/versicherungsagentur-eisenstadt.html" target="_blank" rel="noopener noreferrer">
-    <img src={Duller} alt="Sponsor logo 1" className="mx-auto block" />
-  </a>
-  <a href="https://elmayer.at/en/" target="_blank" rel="noopener noreferrer">
-    <img src={Elmayer} alt="Sponsor logo 2" className="mx-auto block" />
-  </a>
-  <a href="https://neueoperwien.at/" target="_blank" rel="noopener noreferrer">
-    <img src={OperWien} alt="Sponsor logo 3" className="mx-auto block" />
-  </a>
-  <a href="https://www.sfu.ac.at/en/" target="_blank" rel="noopener noreferrer">
-    <img src={SFU} alt="Sponsor logo 4" className="mx-auto block" />
-  </a>
-  <a href="https://www.vienna.intercontinental.com/" target="_blank" rel="noopener noreferrer">
-    <img src={InterContinental} alt="Sponsor logo 5" className="mx-auto block" />
-  </a>
-  <a href="https://www.kem.at/" target="_blank" rel="noopener noreferrer">
-    <img src={KEM} alt="Sponsor logo 6" className="mx-auto block" />
-  </a>
-  <a href="https://www.firmenabc.at/zeib-gmbh_BBJWq" target="_blank" rel="noopener noreferrer">
-    <img src={ZEIB} alt="Sponsor logo 7" className="mx-auto block" />
-  </a>
-  <a href="https://ev-akg-wien.at/" target="_blank" rel="noopener noreferrer">
-    <img src={EV_AkG} alt="Sponsor logo 8" className="mx-auto block" />
-  </a>
-  <a href="https://www.zt-miedler.at/" target="_blank" rel="noopener noreferrer">
-    <img src={Miedler} alt="Sponsor logo 9" className="mx-auto block" />
-  </a>
+    <a href="https://www.helvetia.com/at/web/de/ueber-helvetia/kontakt-aufnehmen/helvetia-standorte/versicherungsagentur-eisenstadt.html" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 1" image={getImage(props.localImages[0])} objectFit="contain"/>
+</a>
+<a href="https://elmayer.at/en/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 2" image={getImage(props.localImages[1])} objectFit="contain"/>
+</a>
+<a href="https://neueoperwien.at/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 3" image={getImage(props.localImages[2])} objectFit="contain"/>
+</a>
+<a href="https://www.sfu.ac.at/en/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 4" image={getImage(props.localImages[3])} objectFit="contain"/>
+</a>
+<a href="https://www.vienna.intercontinental.com/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 5" image={getImage(props.localImages[4])} objectFit="contain"/>
+</a>
+<a href="https://www.kem.at/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 6" image={getImage(props.localImages[5])} objectFit="contain"/>
+</a>
+<a href="https://www.firmenabc.at/zeib-gmbh_BBJWq" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 7" image={getImage(props.localImages[6])} objectFit="contain"/>
+</a>
+<a href="https://ev-akg-wien.at/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 8" image={getImage(props.localImages[7])} objectFit="contain"/>
+</a>
+<a href="https://www.zt-miedler.at/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 9" image={getImage(props.localImages[8])} objectFit="contain"/>
+</a>
 
+    
+    
 </div>
