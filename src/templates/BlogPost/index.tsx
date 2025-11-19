@@ -83,7 +83,11 @@ export const pageQuery = graphql`
         type
         title
         description
-        embeddedImagesLocal
+        embeddedImagesLocal {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
       }
     }
     previous: mdx(id: { eq: $previousPostId }) {
