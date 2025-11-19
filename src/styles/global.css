@@ -102,13 +102,3 @@ h2, .h2 {
     font-size: 24px; /* Smaller font size for small screens */
   }
 }
-
-.gallery.gallery--square a {
-  display: block; /* ensure anchor occupies its grid cell */
-  text-align: center; /* fallback centering for inline content */
-}
-
-.gallery.gallery--square a .gatsby-image-wrapper {
-  display: block;
-  margin: 0 auto; /* center the image wrapper */
-}
