@@ -31,19 +31,49 @@ embeddedImagesLocal:
   - xpower.jpg
   - fortitudo.jpg
   - logoPerfectMatch.jpg
- 
+  - Duller2.jpg
+  - Elmayer2.jpg
+  - EV_AkG2.jpg
+  - InterContinental2.jpg
+  - KEM2.jpg
+  - Miedler2.jpg
+  - OperWien2.jpg
+
 
 ---
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
-<div>
-  <a href="https://www.delfiner.at/index.html" target="_blank" rel="noopener noreferrer">
-    <GatsbyImage alt="Sponsor logo 1" image={getImage(props.localImages[0])} objectFit="contain"/>
-  </a>
-</div>
-
 
 <div class="gallery gallery--square">
+   <a href="https://www.helvetia.com/at/web/de/ueber-helvetia/kontakt-aufnehmen/helvetia-standorte/versicherungsagentur-eisenstadt.html" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="versicherungsagentur Duller" image={getImage(props.localImages[27])} objectFit="contain"/>
+</a>
+<a href="https://elmayer.at/en/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Elmayer" image={getImage(props.localImages[28])} objectFit="contain"/>
+</a>
+<a href="https://ev-akg-wien.at/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Elternverein AKG" image={getImage(props.localImages[29])} objectFit="contain"/>
+</a>
+<a href="https://www.ihg.com/intercontinental/hotels/us/en/vienna/vieha/hoteldetail" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="intercontinental Vienna" image={getImage(props.localImages[30])} objectFit="contain"/>
+</a>
+<a target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Sponsor logo 1" image={getImage(props.localImages[31])} objectFit="contain"/>
+</a>
+<a href="https://www.zt-miedler.at/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Vermessung Miedler" image={getImage(props.localImages[32])} objectFit="contain"/>
+</a>
+<a href="https://neueoperwien.at/" target="_blank" rel="noopener noreferrer">
+  <GatsbyImage alt="Neue Oper Wien" image={getImage(props.localImages[33])} objectFit="contain"/>
+</a>
+</div>
+
+<h2 class="text-center">Sponsoren der Letzten Jahre</h2>
+
+<div class="gallery gallery--square">
+<a href="https://www.delfiner.at/index.html" target="_blank" rel="noopener noreferrer">
+    <GatsbyImage alt="Sponsor logo 1" image={getImage(props.localImages[0])} objectFit="contain"/>
+  </a>
     <a href="https://www.innomotics.com/hub/en/" target="_blank" rel="noopener noreferrer">
   <GatsbyImage alt="Sponsor logo 1" image={getImage(props.localImages[1])} objectFit="contain"/>
 </a>
