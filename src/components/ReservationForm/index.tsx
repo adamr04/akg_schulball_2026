@@ -153,7 +153,7 @@ export const ReservationForm = () => {
             </div>
             <div className="sm:col-span-1">
               <dt>
-                <div className="text-lg font-semibold">Regulärer KArtenpreis</div>
+                <div className="text-lg font-semibold">Regulärer Ka rtenpreis</div>
               </dt>
               <dd className="mt-1 text-lg">
                 <div>
@@ -408,6 +408,8 @@ export const ReservationForm = () => {
             Buchung vor Zuteilung der Tickets jederzeit ohne Kosten stornieren
             lassen. Schicken Sie uns dazu bitte ein E-Mail oder kontaktieren Sie
             uns telefonisch.
+            <br></br>
+            <strong>Zahlungsfrist:</strong> Bitte überweisen Sie den Betrag innerhalb von 14 Tagen, sonst erlischt Ihre Bestellung.
           </p>
         </form>
       </div>

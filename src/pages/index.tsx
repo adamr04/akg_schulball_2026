@@ -42,14 +42,7 @@ const Home: React.FC<PageProps> = ({ data, location }) => {
           </a>
         </div>
         }
-        <p>
-          <br></br>
-          Liebe Ballgäste, <br></br>
-          <a href="https://www.picdrop.com/evamanhart/PKjrgDRb9H">hier der Link zu den Ballfotos "Oscarnight" 2024.</a> <br></br>
-          Viel Freude damit! <br></br>
-          Herzliche Grüße, <br></br>
-          Ihr Schulball-Komitee 2025/26
-        </p>
+    
       </Hero>
       <Container>
         <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
